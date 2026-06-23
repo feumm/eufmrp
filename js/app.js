@@ -333,17 +333,10 @@ function initBrowse() {
     });
   }
 
-  Promise.all(
-    PACKS.map(p =>
-      fetch(`https://api.countapi.xyz/get/feumrp/${encodeURIComponent(p.slug || p.id)}`)
-        .then(r => r.json())
-        .then(d => ({ id: p.id, count: d.value || 0 }))
-        .catch(() => ({ id: p.id, count: 0 }))
-    )
-  ).then(results => {
-    results.forEach(r => { downloadCounts[r.id] = r.count; });
-    if (activeSort === 'downloads') renderFiltered();
-  }).catch(() => {});
+  PACKS.forEach(p => {
+    downloadCounts[p.id] = 0; 
+});
+renderFiltered();
 
   const authorParam = getParam('author');
   if (authorParam) {
