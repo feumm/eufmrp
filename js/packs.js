@@ -124,9 +124,11 @@ const PACKS = [
     //   downloadFile: '...'  → direct file download (CDN link or GitHub raw)
     //   downloadUrl:  '...'  → opens external site in a new tab (Mediafire, Gumroad, etc.)
     packFolder: [
-      { name: 'Xero BP',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: 'S.A.D',      downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: '5.C\'BD',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'HAXOR',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'Simply Cubed',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'Some Random Default',      downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'Meowuh',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'Xero BlackPink',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
     ],
 
     hiddenFromBrowse: true,  // hides from the browse grid; still shows on home featured & direct URL
