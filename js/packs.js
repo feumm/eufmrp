@@ -46,7 +46,13 @@ const PACKS = [
       CDN + 'images/covers/newgreatest.jpg',
     ],
     youtubeEmbed: 'https://www.youtube.com/embed/SV8k8vHmU2M',
-    downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/feum.zip',
+    packFolder: [
+      { name: 'eufmcold',    downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/eufmcold.mcpack' },
+      { name: 'feumault',      downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/feumault.mcpack' },
+      { name: 'feumint',    downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/feumint.mcpack' },
+    ],
+
+    hiddenFromBrowse: true,  // hides from the browse grid; still shows on home featured & direct URL
     featured: true,
     dateAdded: '2026-05-25',
   },
