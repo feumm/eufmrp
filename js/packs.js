@@ -124,11 +124,11 @@ const PACKS = [
     //   downloadFile: '...'  → direct file download (CDN link or GitHub raw)
     //   downloadUrl:  '...'  → opens external site in a new tab (Mediafire, Gumroad, etc.)
     packFolder: [
-      { name: 'HAXOR',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: 'Simply Cubed',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: 'Some Random Default',      downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: 'Meowuh',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
-      { name: 'Xero BlackPink',    downloadUrl: 'https://www.mediafire.com/folder/tpmfrr3noqpel/century' },
+      { name: 'HAXOR',    downloadUrl: 'https://www.mediafire.com/file/wtl5pycvipd2f7a/HAXOR.mcpack/file' },
+      { name: 'Some Random Default',      downloadUrl: 'https://www.mediafire.com/file/s5w8geikowrhwqb/some_random_default.mcpack/file' },
+      { name: 'Simply Cubed',    downloadUrl: 'https://www.mediafire.com/file/n6htxzw91huxmi8/Simply_Cubed.mcpack/file' },
+      { name: 'Meowuh',    downloadUrl: 'https://www.mediafire.com/file/5ob3k3vv3hjtdsr/meowuh_zyzui_edit.mcpack/file' },
+      { name: 'Xero BlackPink',    downloadUrl: 'https://www.mediafire.com/file/1tqfdi4jj14mkou/xero_blackpink.mcpack/file' },
     ],
 
     hiddenFromBrowse: true,  // hides from the browse grid; still shows on home featured & direct URL
