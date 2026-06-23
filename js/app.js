@@ -595,10 +595,6 @@ function initPackDetail() {
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
           </div>
-          <div class="video-hover-badge">
-            <span class="pulse-ring"></span>
-            Hover to preview
-          </div>
         ` : ''}
       </div>
     </div>
@@ -772,14 +768,14 @@ function openShareModal({ title, author, cover, url }) {
       <div class="share-divider">Share on</div>
 
       <div class="share-platforms">
-        <a class="share-platform-btn" href="https://twitter.com/intent/tweet?text=${tweetText}&url=${tweetUrl}" target="_blank" rel="noopener">
-          ${svgX}<span>X / Twitter</span>
+        <a class="share-platform-btn" href="https://twitter.com/intent/tweet?text=${tweetText}&url=${tweetUrl}" target="_blank" rel="noopener" aria-label="Share on X / Twitter">
+          ${svgX}
         </a>
-        <a class="share-platform-btn" href="https://wa.me/?text=${waText}" target="_blank" rel="noopener">
-          ${svgWA}<span>WhatsApp</span>
+        <a class="share-platform-btn" href="https://wa.me/?text=${waText}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+          ${svgWA}
         </a>
-        <button class="share-platform-btn" id="share-discord-btn">
-          ${svgDiscord}<span>Discord</span>
+        <button class="share-platform-btn" id="share-discord-btn" aria-label="Copy link for Discord">
+          ${svgDiscord}
         </button>
       </div>
     </div>
@@ -811,8 +807,8 @@ function openShareModal({ title, author, cover, url }) {
   discordBtn.addEventListener('click', async () => {
     try { await navigator.clipboard.writeText(url); }
     catch { const inp = overlay.querySelector('.share-url-input'); inp.select(); document.execCommand('copy'); }
-    discordBtn.innerHTML = `${svgCheck}<span>Link Copied!</span>`;
-    setTimeout(() => { discordBtn.innerHTML = `${svgDiscord}<span>Discord</span>`; }, 2000);
+    discordBtn.innerHTML = svgCheck;
+    setTimeout(() => { discordBtn.innerHTML = svgDiscord; }, 2000);
   });
 }
 
