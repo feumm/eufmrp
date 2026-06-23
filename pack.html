@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pack — feumrp</title>
+  <meta name="description" content="Texture pack details on feumrp." />
+  <meta property="og:title" content="Pack — feumrp" />
+  <meta property="og:description" content="Texture pack details on feumrp." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="./" class="navbar-logo">
+      <img src="https://cdn.jsdelivr.net/gh/feumm/feumrp@main/images/logo.png" alt="feumrp logo" />
+    </a>
+    <div class="navbar-actions">
+      <div class="support-wrap">
+        <a href="https://feum.gumroad.com/coffee" target="_blank" rel="noopener" class="btn-support">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+          <span>Support</span>
+        </a>
+        <div class="support-tooltip">Love what feum's doing? Give feum some support ☕</div>
+      </div>
+      <a href="collections.html" class="btn-collections">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span>Collections</span>
+      </a>
+      <a href="browse.html" class="btn-browse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span>Browse Packs</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="page">
+    <a href="browse.html" class="detail-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Back to Browse
+    </a>
+    <div id="pack-detail"></div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 feumrp &nbsp;·&nbsp; all right reserved.</p>
+  </footer>
+
+  <script src="js/packs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
