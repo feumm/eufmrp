@@ -70,7 +70,7 @@ const PACKS = [
       CDN + 'images/covers/aeecii-1k.png',
     ],
     youtubeEmbed: 'https://www.youtube.com/embed/a4Tt7ds7mMs',
-    downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/aeecii_1k.mcpack',
+    downloadFile: 'https://github.com/feumm/feumrp/raw/main/packs/aeecii-1k.mcpack',
     featured: true,
     dateAdded: '2026-05-20',
   },
